@@ -614,7 +614,7 @@ h1 {
 }
 
 .stat-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.018);
     padding: 40px 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -813,6 +813,9 @@ h1 {
   }
   .join h2 {
     font-size: 58px;
+  }
+  .stat-card {
+        padding: 30px 20px;
   }
   .footer-bottom {
     flex-wrap: wrap;
