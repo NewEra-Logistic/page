@@ -1050,23 +1050,28 @@ h1 {
     }
 }
 
+
+/* NEL SOCIALS SECTION */
+
 .footer-socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
+  gap: 16px;
   margin: 20px 0;
 }
 
 .footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
   color: #8faedc;
+  font-size: 19px;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 9px 16px;
   border: 1px solid rgba(143, 174, 220, 0.25);
-  border-radius: 20px;
+  border-radius: 50%;
   transition: 0.3s ease;
 }
 
@@ -1074,5 +1079,6 @@ h1 {
   color: #ffffff;
   background: #1764ff;
   border-color: #1764ff;
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
+
