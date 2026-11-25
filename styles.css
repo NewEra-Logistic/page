@@ -1049,3 +1049,30 @@ h1 {
         font-size: 12px;
     }
 }
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.footer-socials a {
+  color: #8faedc;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border: 1px solid rgba(143, 174, 220, 0.25);
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ffffff;
+  background: #1764ff;
+  border-color: #1764ff;
+  transform: translateY(-3px);
+}
