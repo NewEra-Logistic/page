@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the management team behind New Era Logistics.">
+  <title>Our Management | New Era Logistics</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .management-hero {
+      min-height: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 70px 20px;
+      background:
+        linear-gradient(135deg, rgba(4,12,28,.96), rgba(8,30,62,.90)),
+        radial-gradient(circle at top right, #174b91, transparent 60%);
+    }
+
+    .management-hero h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    .management-hero h1 span {
+      color: #72a5ff;
+    }
+
+    .management-hero p {
+      max-width: 650px;
+      color: #b8c8df;
+      line-height: 1.8;
+    }
+
+    .management-section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 75px 22px;
+    }
+
+    .management-intro {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 45px;
+    }
+
+    .management-intro h2 {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .management-intro p {
+      color: #aabbd2;
+      line-height: 1.8;
+    }
+
+    .management-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      gap: 25px;
+    }
+
+    .management-card {
+      background: linear-gradient(145deg, #101f38, #091426);
+      border: 1px solid rgba(114,165,255,.18);
+      border-radius: 14px;
+      padding: 30px 22px;
+      text-align: center;
+      transition: transform .25s ease, border-color .25s ease;
+    }
+
+    .management-card:hover {
+      transform: translateY(-6px);
+      border-color: #72a5ff;
+    }
+
+    .management-photo {
+      width: 125px;
+      height: 125px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #72a5ff;
+      background: #172b49;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #dce8fa;
+      font-size: 13px;
+    }
+
+    .management-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .management-card h3 {
+      font-size: 21px;
+      margin-bottom: 7px;
+    }
+
+    .management-role {
+      color: #72a5ff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .management-card p {
+      color: #aabbd2;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .management-message {
+      margin-top: 65px;
+      padding: 38px 30px;
+      text-align: center;
+      background: linear-gradient(120deg, #10264a, #0b172b);
+      border: 1px solid rgba(114,165,255,.2);
+      border-radius: 14px;
+    }
+
+    .management-message h2 {
+      margin-bottom: 14px;
+    }
+
+    .management-message p {
+      max-width: 700px;
+      margin: auto;
+      color: #b8c8df;
+      line-height: 1.8;
+    }
+
+    .management-back {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 25px;
+      background: #2468c9;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .management-back:hover {
+      background: #3982ed;
+    }
+
+    @media (max-width: 600px) {
+      .management-section {
+        padding: 50px 18px;
+      }
+
+      .management-card {
+        padding: 26px 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/nel-logo.png" alt="New Era Logistics Logo">
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="management.html" class="active">Management</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="management-hero">
+      <h1>MEET OUR <span>MANAGEMENT</span></h1>
+      <p>
+        Behind every successful journey is a team of dedicated people.
+        Get to know the individuals who help lead, support and shape
+        New Era Logistics.
+      </p>
+    </section>
+
+    <section class="management-section">
+
+      <div class="management-intro">
+        <h2>The People Behind NEL</h2>
+        <p>
+          Our management team works together to keep New Era Logistics
+          organised, welcoming and moving forward. From daily operations
+          to community development, each member plays an important role
+          in our journey.
+        </p>
+      </div>
+
+      <div class="management-grid">
+
+        <!-- FOUNDER -->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/wiseman.png"
+                 alt="Wiseman"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>Wiseman</h3>
+          <div class="management-role">Founder</div>
+          <p>
+            Founded New Era Logistics in September 2023 and leads the
+            overall vision, direction and development of the VTC.
+          </p>
+        </article>
+
+        <!-- CEO -->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/ceo.png"
+                 alt="Management team member"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>Simon Peter</h3>
+          <div class="management-role">Chief Executive Officer</div>
+          <p>
+            Oversees daily operations, supports department leaders and
+            helps ensure the VTC runs smoothly.
+          </p>
+        </article>
+
+        <!-- COO -->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/coo.png"
+                 alt="Management team member"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>Dumi</h3>
+          <div class="management-role">Chief Operating Officer</div>
+          <p>
+            Work with CEO to oversees daily operations, supports department leaders and
+            helps ensure the VTC runs smoothly.
+          </p>
+        </article>
+
+        <!-- GENERAL MANAGER -->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/gm.png"
+                 alt="Management team member"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>Edico</h3>
+          <div class="management-role">General Manager</div>
+          <p>
+            Leading drivers, conducting evaluations, and ensuring compliance with vtc rules and standards.
+          </p>
+        </article>
+
+        <!-- Human Resources -->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/hr.png"
+                 alt="Management team member"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>TBos</h3>
+          <div class="management-role">HR Manager</div>
+          <p>
+            Supports recruitment, member relations and the welcoming
+            environment that makes our vtc special.
+          </p>
+        </article>
+
+        <!-- Events Manager-->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/events.png"
+                 alt="Management team member"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>Thiza</h3>
+          <div class="management-role">Events Manager</div>
+          <p>
+            Leads event planning and coordination, helping deliver
+            organised and enjoyable convoys for the community.
+          </p>
+        </article>
+
+        <!-- Support Staff-->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/support.png"
+                 alt="Management team member"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>Less other</h3>
+          <div class="management-role">Support Staff</div>
+          <p>
+            Keeping members active and engaged (pushing them to hit trucksbook kilometer limit).
+          </p>
+        </article>
+
+        <!-- Social Media -->
+        <article class="management-card">
+          <div class="management-photo">
+            <img src="assets/management/social.png"
+                 alt="Management team member"
+                 onerror="this.style.display='none'; this.parentElement.textContent='PHOTO';">
+          </div>
+          <h3>Xsya</h3>
+          <div class="management-role">Media Manager</div>
+          <p>
+            Capture convoy footage and in-game screenshots for posts. Stream vtc events on YouTube.
+          </p>
+        </article>
+      </div>
+
+      <div class="management-message">
+        <h2>One Team. One Vision. One New Era.</h2>
+        <p>
+          Our management team is committed to building a VTC where
+          teamwork, respect and dedication come first. Every mile we
+          travel and every achievement we reach is part of a shared journey.
+        </p>
+        <a href="index.html" class="management-back">Back to Home</a>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 New Era Logistics. Where Every Mile Counts.</p>
+    <div class="footer-legal-links">
+      <a href="terms.html">Terms & Conditions</a>
+      <span>|</span>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
