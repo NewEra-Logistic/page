@@ -848,3 +848,130 @@ h1 {
     font-size: 7px;
   }
 }
+
+/* MANAGEMENT PAGE HEADER FIX */
+.site-header {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.site-header .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.site-header .logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.site-header .logo img {
+    display: block;
+    width: 85px;
+    height: 65px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.site-header nav a {
+    white-space: nowrap;
+}
+
+/* MANAGEMENT PAGE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        padding: 12px 16px;
+    }
+
+    .site-header .logo img {
+        width: 75px;
+        height: 55px;
+    }
+
+    .site-header nav {
+        justify-content: center;
+        gap: 12px 18px;
+        width: 100%;
+    }
+
+    .site-header nav a {
+        font-size: 13px;
+    }
+
+    .management-hero {
+        min-height: 260px;
+        padding: 55px 18px;
+    }
+
+    .management-hero h1 {
+        font-size: clamp(29px, 8vw, 42px);
+        letter-spacing: 1px;
+    }
+
+    .management-section {
+        width: 100%;
+        padding: 45px 16px;
+    }
+
+    .management-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .management-card {
+        min-width: 0;
+        padding: 22px 13px;
+    }
+
+    .management-card h3 {
+        font-size: 17px;
+    }
+
+    .management-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .management-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .management-photo {
+        width: 110px;
+        height: 110px;
+    }
+
+    .management-hero h1 {
+        font-size: 30px;
+    }
+
+    .management-intro h2,
+    .management-message h2 {
+        font-size: 24px;
+    }
+
+    .management-message {
+        padding: 28px 18px;
+    }
+}
+ 
